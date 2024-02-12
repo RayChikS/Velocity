@@ -1,13 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Velocity</title>
   </head>
   <body>
-    <p>hello</p>
+    <header class="header">
+      <div class="header-content container">
+        <nav class="nav">
+          <a class="logo" href="/index.html">Velocity</a>
+
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-item-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-item-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero-content container">
+          <h1 class="hero-title">This is Velocity</h1>
+          <ul class="hero-list">
+            <li class="hero-list-item">
+              <button data-modal-open class="hero-button" type="button">
+                sing up
+              </button>
+            </li>
+            <li class="hero-list-item">
+              <a class="hero-link" href="#">learn more</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about-content container">
+          <div class="about-text">
+            <h2 class="about-title">what we do</h2>
+            <p class="about-subtitle">
+              This is some text inside of a div block.
+            </p>
+          </div>
+
+          <div class="about-cards">
+            <ul class="about-list">
+              <li class="about-list-item">
+                <img class="card-svg" cl src="images/card-1.svg" alt="clock" />
+                <h3 class="card-title">Graphic Design</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.
+                </p>
+              </li>
+
+              <li class="about-list-item">
+                <img class="card-svg" src="images/card-2.svg" alt="arrows" />
+                <h3 class="card-title">Awesome code</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.
+                </p>
+              </li>
+
+              <li class="about-list-item">
+                <img class="card-svg" src="images/card-3.svg" alt="box" />
+                <h3 class="card-title">free template</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="services-content container">
+          <div class="services-text">
+            <h2 class="services-title">services</h2>
+
+            <p class="services-subtitle">
+              This is some text inside of a div block.
+            </p>
+          </div>
+
+          <div class="services-cards">
+            <ul class="services-list">
+              <li class="services-list-item">
+                <img
+                  class="services-card-img"
+                  src="images/service-1.jpg"
+                  alt="bridge"
+                />
+                <h3 class="services-card-title">SERVICES one</h3>
+                <p class="services-card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a class="services-card-link" href="#">learn more</a>
+              </li>
+
+              <li class="services-list-item">
+                <img
+                  class="services-card-img"
+                  src="images/service-2.jpg"
+                  alt="disco"
+                />
+                <h3 class="services-card-title">SERVICES two</h3>
+                <p class="services-card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a class="services-card-link" href="#">learn more</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="tabs">
+        <div class="tabs-content container">
+          <div class="tabs-text">
+            <h2 class="tabs-title">Tab Section</h2>
+            <p class="tabs-subtitle">
+              This is some text inside of a div block.
+            </p>
+          </div>
+
+          <div class="tabs-image">
+            <ul class="tabs-list">
+              <li class="tabs-list-item">
+                <button class="tabs-btn" type="button">tab button 1</button>
+              </li>
+              <li class="tabs-list-item">
+                <button class="tabs-btn" type="button">tab button 2</button>
+              </li>
+              <li class="tabs-list-item">
+                <button class="tabs-btn" type="button">tab button 3</button>
+              </li>
+            </ul>
+
+            <img
+              class="tabs-image"
+              src="images/tabs-1.jpg"
+              alt="photographer"
+            />
+
+            <h3 class="tabs-sectitle">Some Title Here</h3>
+            <p class="tabs-sectext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+            <p class="tabs-sectext">
+              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+              commodo diam libero vitae erat.
+            </p>
+            <p class="tabs-sectext">
+              Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+              Nunc ut sem vitae risus tristique posuere.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts-content container">
+          <ul class="contacts-list">
+            <li class="contacts-list-item">
+              <h3 class="contacts-title">about velocity</h3>
+              <p class="contacts-first-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat.
+              </p>
+            </li>
+
+            <li class="contacts-list-item">
+              <h3 class="contacts-title">useful links</h3>
+
+              <ul class="info-list">
+                <li class="info-list-item">
+                  <a class="info-link" href="#"
+                    >Phasellus gravida semper nisi</a
+                  >
+                </li>
+
+                <li class="info-list-item">
+                  <a class="info-link" href="#">Suspendisse nisl elit</a>
+                </li>
+
+                <li class="info-list-item">
+                  <a class="info-link" href="#">Dellentesque habitant morbi </a>
+                </li>
+
+                <li class="info-list-item">
+                  <a class="info-link" href="#">Etiam sollicitudin ipsum</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="contacts-list-item">
+              <h3 class="contacts-title">social</h3>
+              <ul class="socials-list">
+                <li class="socials-list-item">
+                  <img class="social-svg" src="images/social1.svg" alt="" />
+                  <a class="social-link" href="#">Twitter</a>
+                </li>
+
+                <li class="socials-list-item">
+                  <img class="social-svg" src="images/social2.svg" alt="" />
+                  <a class="social-link" href="#">Facebook</a>
+                </li>
+
+                <li class="socials-list-item">
+                  <img class="social-svg" src="images/social3.svg" alt="" />
+                  <a class="social-link" href="#">Pinterest</a>
+                </li>
+
+                <li class="socials-list-item">
+                  <img class="social-svg" src="images/social4.svg" alt="" />
+                  <a class="social-link" href="#">Google</a>
+                </li>
+
+                <li class="socials-list-item">
+                  <img class="social-svg" src="images/social5.svg" alt="" />
+                  <a class="social-link" href="#">Webflow</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content container">
+        <p class="footer-text">&copy; Velocity Inc. Made in Webflow.</p>
+      </div>
+    </footer>
   </body>
 </html>
