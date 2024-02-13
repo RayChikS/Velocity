@@ -30,6 +30,19 @@ BASE STYLES
   --footer: #383838;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -65,7 +78,11 @@ ul {
 }
 
 img {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 button {
@@ -127,6 +144,18 @@ HEADER
 }
 .nav-item-link:active {
   color: var(--darkOcean);
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    font-size: 18px;
+  }
+  .nav-list {
+    gap: 20px;
+  }
+  .nav-item-link {
+    font-size: 14px;
+  }
 }
 
 /*
@@ -200,6 +229,20 @@ MAIN
   text-decoration: underline;
 }
 
+@media screen and (max-width: 400px) {
+  .hero {
+    padding-top: 160px;
+  }
+  .hero-list {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .hero-title {
+    font-size: 45px;
+    margin-bottom: 75px;
+  }
+}
+
 /* __________about_______- */
 
 .about {
@@ -227,10 +270,10 @@ MAIN
 .about-list {
   display: flex;
   gap: 20px;
-  align-items: center;
 }
 .about-list-item {
   display: flex;
+  max-width: 300px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -258,6 +301,35 @@ MAIN
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 400px) {
+  .about-title {
+    font-size: 20px;
+  }
+  .about-subtitle {
+    font-size: 14px;
+  }
+  .about-list-item {
+    max-width: 250px;
+  }
+  .card-svg {
+    width: 70px;
+    height: 70px;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .about-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 /* _________SERVICES____________ */
 
 .services {
@@ -283,8 +355,6 @@ MAIN
   letter-spacing: 3px;
   color: var(--darkWhite);
 }
-.services-cards {
-}
 .services-list {
   display: flex;
   gap: 20px;
@@ -293,6 +363,7 @@ MAIN
 .services-list-item {
   padding: 15px;
   text-align: center;
+  max-width: 430px;
 }
 .services-card-img {
   margin-bottom: 20px;
@@ -324,6 +395,30 @@ MAIN
 .services-card-link:hover,
 .services-card-link:focus {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 400px) {
+  .services-title {
+    font-size: 24px;
+  }
+  .services-subtitle {
+    font-size: 14px;
+  }
+
+  .services-card-title {
+    font-size: 16px;
+  }
+  .services-card-text {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .services-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
 /* __________tabs___________ */
@@ -386,6 +481,41 @@ MAIN
   background-color: var(--lightOcean);
 }
 
+@media screen and (max-width: 400px) {
+  .tabs-sectext {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .tabs-list {
+    flex-wrap: wrap;
+  }
+  .tabs-title {
+    font-size: 25px;
+  }
+  .tabs-subtitle {
+    font-size: 14px;
+  }
+  .tabs-sectitle {
+    font-size: 25px;
+  }
+  .tabs-sectext {
+    font-size: 14px;
+  }
+  .tabs-btn {
+    padding: 5px 10px;
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .tabs-btn {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
+
 /* __________contacts___________ */
 
 .contacts {
@@ -425,6 +555,10 @@ MAIN
   text-decoration: underline;
 }
 
+.social-svg {
+  width: 16px;
+  height: 16px;
+}
 .socials-list-item {
   display: flex;
   gap: 10px;
@@ -440,6 +574,30 @@ MAIN
   text-decoration: underline;
 }
 
+@media screen and (max-width: 400px) {
+  .card-title {
+    font-size: 14px;
+  }
+  .contacts-first-text {
+    font-size: 12px;
+  }
+  .social-link {
+    min-width: 200px;
+  }
+  .info-list-item {
+    min-width: 150px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contacts-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+  }
+}
+
 /*
 ========================
 FOOTER
@@ -453,4 +611,10 @@ FOOTER
 }
 .footer-text {
   color: var(--midGray);
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    padding: 20px 0;
+  }
 }
