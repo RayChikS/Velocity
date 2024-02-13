@@ -1,14 +1,25 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
+const tabsBtns = document.querySelectorAll(".tabs-btn");
+const tabImages = document.querySelectorAll(".tabs-image");
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+//this fun hide all tabs and remove active from the buttons
+function hideTabs() {
+  tabImages.forEach((image) => image.classList.add("visually-hidden"));
+  tabsBtns.forEach((btn) => btn.classList.remove("active"));
+}
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+//this function shows the tab number and makes the corresponding button active
+
+function showTabs(index) {
+  tabImages[index].classList.remove("visually-hidden");
+  tabsBtns[index].classList.add("active");
+}
+
+hideTabs();
+showTabs(0);
+
+tabsBtns.forEach((btn, index) =>
+  btn.addEventListener("click", () => {
+    hideTabs();
+    showTabs(index);
+  })
+);

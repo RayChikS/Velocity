@@ -452,7 +452,7 @@ MAIN
   gap: 16px;
   margin-bottom: 40px;
 }
-.tabs-image {
+.tabs-img {
   margin-bottom: 16px;
 }
 .tabs-sectitle {
@@ -476,8 +476,7 @@ MAIN
   letter-spacing: 2px;
   padding: 0 30px;
 }
-.tabs-btn:hover,
-.tabs-btn:focus {
+.active {
   background-color: var(--lightOcean);
 }
 
